@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo1.jpg" width="65px"><br><b style="color: black;">Hostel booking</b></div>
+        </header>
+<div class="container">
+  <form method="POST" action="/book">
+    <h2>Book Your Hostel</h2>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <label for="hostel">Choose Hostel:</label>
+    <select id="hostel" name="hostel" required>
+      <option value="">Select Hostel</option>
+      <option value="Scholar Paradise">Scholar Paradise</option>
+      <option value="Agrasen Mansion">Agrasen Mansion</option>
+      <option value="Woodstocks">Woodstocks</option>
+      <option value="KK Residency">KK Residency</option>
+      <option value="Pride Girls">Pride Girls</option>
+      <option value="Gaursian Girls">Gaursian Girls</option>
+      <option value="Sangam House">Sangam House</option>
+      <option value="Doonga Boys">Doonga Boys</option>
+      <option value="People Tree">People Tree</option>
+      <option value="Kandoli Boys">Kandoli Boys</option>
+      <option value="Ashirwad Home">Ashirwad Home</option>
+    </select>
+    <label for="session">Session:</label>
+    <input type="text" id="session" name="session" required>
+    <label for="year">College Year:</label>
+    <select id="year" name="year" required>
+      <option value="">Select Year</option>
+      <option value="first">First Year</option>
+      <option value="second">Second Year</option>
+      <option value="third">Third Year</option>
+      <option value="fourth">Fourth Year</option>
+    </select>
+    <button type="submit" name="book">Book Now</button>
+  </form>
+</div>
+<footer>
+    Made by dhairya jain 
+</footer>
+</body>
+</html>
